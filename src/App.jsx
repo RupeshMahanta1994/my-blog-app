@@ -1,14 +1,27 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import About from "./Pages/About/About";
+import Author from "./Pages/Author/Author";
+import Contact from "./Pages/Contact/Contact";
+import Gallery from "./Pages/Gallery/Gallery";
+import HomePage from "./Pages/Home/HomePage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Search from "./Pages/Search/Search";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/author" element={<Author />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/Search" element={<Search />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
