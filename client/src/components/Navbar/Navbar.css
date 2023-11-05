@@ -1,0 +1,9 @@
+
+
+a::after{
+  width: 10px;
+  height: 2px;
+  content: "";
+  background: red;
+
+}

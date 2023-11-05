@@ -1,0 +1,31 @@
+
+
+label{
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+  font-size: large;
+  font-weight: 500;
+}
+
+form>input{
+  width: 20rem;
+  height: 2rem;
+  padding: 1rem ;
+  background: lightgrey;
+  outline: none;
+  border: none;
+}
+
+form>input::placeholder{
+  color: grey;
+}
+
+form>button{
+  background: lightseagreen;
+  margin-top: 1rem;
+  padding: 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: aliceblue;
+  text-transform: uppercase;
+}

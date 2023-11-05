@@ -1,0 +1,16 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.sidebar__subheadings {
+  text-align: center;
+  font-weight: 700;
+  padding: 2px 0;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
